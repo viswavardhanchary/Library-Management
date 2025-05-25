@@ -4,7 +4,7 @@ const router = require("./routers/dataManu");
 const app = express();
 const cors = require("cors");
 app.use(cors({
-  origin : "http://localhost:5173"
+  origin : "https://library-management-tx23.onrender.com"
 }))
 app.use("/data" , router);
 
