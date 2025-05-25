@@ -1,0 +1,91 @@
+.about-me-dark {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212; /* dark background */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  color: #e0e0e0; /* light gray text */
+  transition: box-shadow 0.3s ease;
+}
+
+.about-me-dark:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+}
+
+.profile-photo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.3rem;
+  color: #60a5fa; /* blue-400 accent */
+  font-weight: 700;
+}
+
+.about-content .role {
+  font-style: italic;
+  color: #9ca3af; /* gray-400 */
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.about-content .intro {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #d1d5db; /* gray-300 */
+  margin-bottom: 1.5rem;
+}
+
+.contact-links a {
+  font-size: 1.9rem;
+  color: #60a5fa; /* blue accent */
+  margin-right: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #3b82f6; /* brighter blue */
+  filter: drop-shadow(0 0 4px #3b82f6);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .about-me-dark {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+     gap: 5px;
+   
+  }
+
+  .profile-photo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+}

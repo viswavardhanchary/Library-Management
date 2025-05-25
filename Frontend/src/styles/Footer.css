@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 12px;
+  padding: 5px 0;
+  gap: 15px;
+}
+.footer-sections {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-about,
+.footer-help {
+  text-decoration: none;
+  color: rgb(5, 84, 255);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-about:hover,
+.footer-help:hover {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: .8rem;
+  }
+  .para-section {
+    text-align: center;
+  }
+}

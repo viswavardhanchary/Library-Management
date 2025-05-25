@@ -1,0 +1,78 @@
+.contact-section {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #60a5fa;
+}
+
+.email-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.email-text {
+  font-size: 1.1rem;
+  word-break: break-all;
+  background: #1f1f1f;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.copy-btn {
+  padding: 0.4rem 0.9rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.copy-btn:hover {
+  background-color: #2563eb;
+}
+
+.send-mail-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #60a5fa;
+  color: #121212;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.send-mail-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+@media (max-width: 500px) {
+  .contact-section h2{
+    font-size: 1.2rem;
+  }
+  .email-text {
+    font-size: .9rem;
+  }
+  .send-mail-btn {
+    font-size: 1rem;
+  }
+}

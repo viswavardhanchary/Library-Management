@@ -1,0 +1,204 @@
+.book-details-search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  row-gap: 15px;
+  column-gap: 15px;
+  margin-top: 25px;
+}
+
+.books-filters h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 55, 255);
+  text-decoration: underline;
+}
+
+.books-filter-container {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.books-filters {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+}
+
+.books-filters-search-by {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+
+.books-filters-search-by-author,
+.books-filters-search-by-title,
+.books-filter-by-options-ranges-low,
+.books-filter-by-options-ranges-high {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgb(0, 0, 255);
+  border-radius: 15px;
+  padding: 8px 10px;
+}
+
+.books-filters-search-by-find,
+.book-filter-by-option-apply {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 8px;
+  border: 1px solid rgb(0, 0, 255);
+  color: white;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 255);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.books-filters-search-by-find {
+  margin-bottom: 5px;
+}
+
+.books-filter-by-options {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.books-filter-by-options-lowtohigh,
+.books-filter-by-options-lowtohigh,
+.books-filter-by-options-free,
+.books-filter-by-options-premium,
+.books-filter-by-options-latest,
+.books-filter-by-options-oldest,
+.books-filter-by-options-morelikes,
+.books-filter-by-options-moreviews,
+.books-filter-by-options-moredownloads,
+.content-type-inside-search {
+  border: 1px solid gray;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.books-filter-by-options-prices,
+.books-filter-by-options-types,
+.books-filter-by-options-when,
+.books-filter-by-options-popular,
+.books-filter-by-options-contenttype {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.books-filter-by-options-contenttype {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.books-filter-by-options-ranges-insider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.find-filters-search {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  /* Soft blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.find-filters-search:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+.find-filters-search:active {
+  transform: scale(0.98);
+}
+
+.come-into-pic {
+  background-color: white;
+  width: 250px;
+}
+
+.books-filters {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1100px) {
+  .books-filter-by-options {
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .book-details-search {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ham-in-books-filter {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .books-filter-by-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .ham-in-books-filter {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+
+  .come-into-pic {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 250px;
+  }
+
+  .books-filters {
+    display: none;
+
+  }
+
+  .books-filter-by-options {
+    width: 250px;
+    grid-template-columns: 1fr;
+  }
+
+  .book-details-search {
+    position: relative;
+  }
+}

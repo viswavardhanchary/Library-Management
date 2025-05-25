@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2d42;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  border-radius: 10px;
+}
+.navbar .heading {
+  color: white;
+  text-decoration: none;
+}
+
+/* Logo */
+.navbar-left {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+/* Nav Links */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #8d99ae;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    background-color: #2b2d42;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
