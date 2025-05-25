@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const getUserData = async () => {
       if (JSON.parse(localStorage.getItem('book')) == null) {
-        const res = await fetch("http://localhost:3000/data");
+        const res = await fetch("https://library-management-uirk.onrender.com/data");
         const data = await res.json();
         setBook(data);
         localStorage.setItem('book', JSON.stringify(data));
